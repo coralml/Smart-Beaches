@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 from collections import Counter
 
 # Cargar los datos
-df = pd.read_csv("C:/Users/Lenovo/OneDrive/Escritorio/UPV/4º/SMC/SMCnotebooks/sentimientos_kpis.csv")
+df = pd.read_csv("sentimientos_kpis.csv")
 # Asegurar que las fechas están en datetime
 df['published_at_date'] = pd.to_datetime(df['published_at_date'], errors='coerce')
 df['year_month'] = df['published_at_date'].dt.to_period('M').astype(str)
