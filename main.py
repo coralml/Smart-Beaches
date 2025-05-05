@@ -14,7 +14,7 @@ df['year'] = df['published_at_date'].dt.year
 st.set_page_config(layout="wide", page_title="Smart Beach Dashboard")
 st.title("🏖️ Public Perception of Valencian Beaches: Insights from Google Maps Reviews")
 
-st.sidebar.title("Navegationn")
+st.sidebar.title("Navegation")
 page = st.sidebar.selectbox("Select a view", ["Sentimental Analysis", "Key Performance Indicators"])
 
 # Filtros
